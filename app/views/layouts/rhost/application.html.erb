@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @page_title %></title>
+  <%= csrf_meta_tag %>
+  <%= stylesheet_link_tag 'rhost/application' %>
+  <%= javascript_include_tag 'rhost/application' %>
+  <%= yield :head %>
+</head>
+<body>
+  <%= yield %>
+</body>
+</html>
