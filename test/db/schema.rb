@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 20150710152542) do
     t.string   "meta_title"
     t.string   "meta_description"
     t.integer  "author_id"
-    t.integer  "publisher_id"
+    t.string   "author_type"
     t.datetime "published_at"
     t.datetime "created_at",                       null: false
     t.datetime "updated_at",                       null: false

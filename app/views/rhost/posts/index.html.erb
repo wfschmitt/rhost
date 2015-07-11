@@ -1,3 +1,9 @@
-<p>Hello</p>
-<p>This is an example list of posts for Rhost.</p>
-<p><%= rhost_version %></p>
+<h1>Posts</h1>
+<ul>
+  <% for post in @posts %>
+  <li><%= link_to post.title, [:edit, post] %>
+  <% end %>
+</ul>
+<p>
+  <%= link_to "New post", new_post_path %>
+</p>

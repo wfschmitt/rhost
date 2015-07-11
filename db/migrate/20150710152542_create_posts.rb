@@ -6,7 +6,8 @@ class CreatePosts < ActiveRecord::Migration
       t.boolean :featured, :default => false
       t.boolean :page, :default => false
       t.string :meta_title, :meta_description
-      t.integer :author_id, :publisher_id
+      t.integer :author_id
+      t.string :author_type
       t.datetime :published_at
       t.timestamps null: false
     end
